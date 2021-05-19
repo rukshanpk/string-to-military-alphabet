@@ -42,6 +42,7 @@ codes = {
 }
 
 while True:
+    print("\n")
     word = raw_input("String to convert : ")
     print("\n")
     if word == "":
