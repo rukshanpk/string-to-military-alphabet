@@ -41,12 +41,7 @@ codes = {
     '9': "nine"
 }
 
-while True:
-    print("\n")
-    word = raw_input("String to convert : ")
-    print("\n")
-    if word == "":
-        exit()
-    for letter in word.lower():
-        if letter in codes:
-            print(letter.upper()+"-for-"+codes[letter])
+word = sys.argv[1]
+for letter in word.lower():
+    if letter in codes:
+        print(letter.upper()+"-for-"+codes[letter])
